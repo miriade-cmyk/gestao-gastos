@@ -9,9 +9,9 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 }
 
 define( 'DB_NAME', getenv('DB_NAME') ?: 'gestao_gastos' );
-define( 'DB_USER', getenv('DB_USER') ?: 'wp_user' );
-define( 'DB_PASSWORD', getenv('DB_PASSWORD') ?: '' );
-define( 'DB_HOST', getenv('DB_HOST') ?: 'localhost' );
+define( 'DB_USER', getenv('DB_USER') ?: 'wp_user_gg' );
+define( 'DB_PASSWORD', getenv('DB_PASSWORD') ?: 'Gestao_Gastos_2026!' );
+define( 'DB_HOST', getenv('DB_HOST') ?: ':/cloudsql/eco-emissary-240220:southamerica-east1:wp-instance' );
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
 

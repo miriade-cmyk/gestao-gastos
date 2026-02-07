@@ -13,7 +13,7 @@ steps:
     args:
       - 'run'
       - 'deploy'
-      - 'gestao-gastos'
+      - 'gestao-gastos-final'
       - '--image'
       - 'gcr.io/$PROJECT_ID/gestao-gastos'
       - '--region'
@@ -21,6 +21,8 @@ steps:
       - '--platform'
       - 'managed'
       - '--allow-unauthenticated'
+      - '--add-cloudsql-instances'
+      - 'eco-emissary-240220:southamerica-east1:wp-instance'
       - '--port'
       - '8080'
 
